@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import { InfiniteScroll } from './pages/InfiniteScroll'
+// import { Sorting } from './pages/Sorting'
+// import { ApiData } from './pages/ApiData'
+// import { BrowserRouter , NavLink , Route ,Routes  } from 'react-router-dom'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <InfiniteScroll/>
+      {/* <BrowserRouter>
+        <div className='Nav'>
+        <NavLink to='/ApiData'>Data</NavLink>
+        <NavLink to='/Sorting'>Sorted Data</NavLink>
+        </div>
+        <Routes>
+           <Route path='/ApiData' element={<ApiData/>}></Route>
+           <Route path='/Sorting' element={<Sorting />}></Route>
+        </Routes>
+      </BrowserRouter> */}
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

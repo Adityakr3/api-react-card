@@ -1,0 +1,50 @@
+/* @font-face {
+    font-family: gilroy;
+    src: url(./public/fonts/Gilroy-Regular.ttf)format("truetype");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    color: #999;
+    background-color: rgb(15, 18, 21);
+    scroll-behavior: smooth;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    margin: 12px;
+    padding: 12px;
+    width: 60%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgb(177, 63, 63);
+    border-radius: 12px;
+    
+}
+.Name{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.Main{
+    overflow: scroll;
+    height: 100vh;
+}
+.loader{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
