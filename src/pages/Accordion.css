@@ -1,0 +1,27 @@
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.accordion-title{
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(105, 106, 106);
+    color: red;
+    border: 2px solid black;
+}
+.accordion-content{
+    transition: 2s linear ease-in-out;
+    padding: 12px 24px;
+    height: fit-content;
+    width: 100%;
+    color: black;
+    background-color: rgba(239, 241, 241, 0.533);
+}
+video{
+    width: 185px;
+    height: 145px;
+}
