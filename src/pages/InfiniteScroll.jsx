@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./InfiniteScroll.css";
+
 export const InfiniteScroll = () => {
   const [offset, setOffSet] = useState(0);
   const [isLoading , setLoading] = useState(false)
@@ -12,6 +13,7 @@ export const InfiniteScroll = () => {
     )
       .then((res) => res.json())
       .then((newData) => {
+        // console.table(newData.users)
         setData([...data , ...newData.users]);
         setLoading(false)
       })

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-// import { Sorting } from './Sorting';
 import './ApiData.css'
 
 export function ApiData() {
@@ -29,7 +28,6 @@ export function ApiData() {
     
     return (
       <div className="App">
-        <Sorting data={data} />
         <table className='table'border={1} >
           <thead>
             <th>NO.</th>

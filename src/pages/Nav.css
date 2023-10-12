@@ -1,0 +1,31 @@
+
+.navigation{
+    width: 20%;
+    height:30%;
+    background-color: #9a9a9a;
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+ul{
+    position: absolute;
+    left:15%;
+    top:24%;
+    width: 175px;
+    height: 225px;
+    font-size: 18px;
+    text-align: center;
+    background-color: aquamarine;
+}
+li{
+    text-decoration: none;
+    border: 3px;
+    padding: 12px 24px;
+}
