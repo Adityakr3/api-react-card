@@ -18,8 +18,6 @@ export const Accordion = () => {
   };
   return (
     <div className="accordion">
-      {/* ........................................................................ */}
-
       <div className="accordion-title" onClick={handleClick}>
         <h1>accordion title</h1>
       </div>
@@ -45,7 +43,7 @@ export const Accordion = () => {
           iste excepturi fuga quo deserunt.
         </p>
       </div>
-      {/* ................................................................... */}
+
       <div className="accordion-title" onClick={handleClick1}>
         <h1>Accordion Image</h1>
       </div>
@@ -59,7 +57,6 @@ export const Accordion = () => {
           srcset=""
         />
       </div>
-      {/* .............................................................................. */}
 
       <div className="accordion-title" onClick={handleClick2}>
         <h1>Accordion Video</h1>
@@ -78,7 +75,7 @@ export const Accordion = () => {
           allowfullscreen
         ></iframe>
       </div>
-      {/* ........................................................................................... */}
+
     </div>
   );
 };
