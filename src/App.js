@@ -5,7 +5,9 @@ import { InfiniteScroll } from './pages/InfiniteScroll'
 import { ExcelFilePage } from './pages/ExcelFilePage'
 import { Task } from './pages/Task'
 import { Card } from './pages/Card'
+import { Image } from './pages/Image'
 import { Nav } from './pages/Nav'
+import { MultistepForm } from './pages/MultiStepForm'
 import { Throttle } from './pages/Throttle'
 import { Accordion } from './pages/Accordion'
 import { BrowserRouter , NavLink , Route ,Routes  } from 'react-router-dom'
@@ -14,6 +16,8 @@ const App = () => {
     <div>
       <BrowserRouter>
         <div className='Nav'>
+        <NavLink to='/image'>Image Tiles</NavLink>
+        <NavLink to='/multistepform'>MultiStepForm</NavLink>
         <NavLink to='/throttle'>Throttle/Debounce</NavLink>
         <NavLink to='/card'>Card</NavLink>
         <NavLink to='/nav'>Nav</NavLink>
@@ -24,6 +28,8 @@ const App = () => {
         <NavLink to='/excel-file'>ExcelFilePage</NavLink>
         </div>
         <Routes>
+        <Route path="/multistepform" element={<MultistepForm/>} />
+           <Route path="/image" element={<Image/>} />
            <Route path="/throttle" element={<Throttle/>} />
            <Route path="/card" element={<Card/>} />
            <Route path="/nav" element={<Nav/>} />

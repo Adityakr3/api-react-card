@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    color: #999;
+    background-color: rgb(15, 18, 21);
+    scroll-behavior: smooth;
+}
+h1{
+    margin-top: 12px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Form{
+    color: black;
+    min-height: 550px;
+    width:480px;
+    height: 380px;
+    font-size: 12px;
+    color: rgb(26, 26, 26);
+    background-color: #999;
+}
+.btn{
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    /* background-color: #f6e8e3; */
+}
+.btn > button{
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 3px 3px 12px goldenrod;
+}
+.point{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 198px;
+}
+.point > div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.set{
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.input{
+    width:100%;
+    height:25%;
+    margin-top: 20%;
+    padding: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 28px;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.input > input{
+    margin: auto;
+    width:90%;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 18px;
+}
+.circle{
+    background-color: black;
+}
+.complete{
+    background-color: red;
+}
